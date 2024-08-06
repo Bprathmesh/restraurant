@@ -1,17 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom/client"
+import { jsx } from "react/jsx-runtime";
 
-const parent = React.createElement("div", { id: "parent" }, [
-    React.createElement("div", { id: "child" }, [
-        React.createElement("h1", {}, "I'm an h1 tag"),
-        React.createElement("h2", {}, "I'm an h2 tag"),
-    ]),
-    React.createElement("div", { id: "child2" }, [
-        React.createElement("h1", {}, "I'm an hi tag"),
-        React.createElement("h2", {}, "I'm an h2 tag"),
-    ]),
-]);
+const FunctionalHeadingComponent=()=>{
+    return (
+        <div><FunctionalHeadingComponent2/>
+    <h1> Namaste React from fc😇</h1></div>)
+}
+const FunctionalHeadingComponent2=()=> <h2>hi</h2> //can also be written this way 
+const newFn=()=>{
+    return(
+    //    { FunctionalHeadingComponent()}
+    <div>heyy</div>
+)
+}
 
-console.log(parent); // object
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+const jsxHeading=(<h1>Namaste React using JSX 🥰</h1>);
+const root=ReactDOM.createRoot(document.getElementById("root"));
+root.render(<FunctionalHeadingComponent/>);
+
+// React Component 
