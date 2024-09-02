@@ -28,3 +28,11 @@ Array joins-> to join with , or - or anything imp for production
 these images link are on cdn hosted 
 
 Map fn ?->usage why
+
+React optimises its render cycle-? in refernce to passing id in map 
+Components at same level ~ need to have unique ids , uniquely represented ->new restrau that came in that came in first place react will not know what is changed and react will re render all these components and one more thing editted react doesnt now at which place it has to come  so it will re render all the components ~ Think about it in big scale for 1000 restrau components the level of optmisation it brings 
+
+Never use index as key bad practice
+index as a key as an antipattern
+
+NOT USING KEY<<index as key<< unique id is the best practice
