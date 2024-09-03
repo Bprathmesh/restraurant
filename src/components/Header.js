@@ -1,7 +1,14 @@
 import { LOGO_URL } from "../utils/constants";
+import { useState } from "react";
 
 // Header Component
 const Header = () => {
+    const [login,setlogin]=useState("Login");
+    function toggle(){
+        if(login==="Login"){
+            setlogin("Logout");
+        }else setlogin("Login");
+    }
     return (
         <div className="header">
             <div className="logo-container">
@@ -18,6 +25,7 @@ const Header = () => {
                     <li><a href="/about">About Us</a></li>
                     <li><a href="/contact">Contact Us</a></li>
                     <li><a href="/cart">Cart</a></li>
+                    <li><button onClick={toggle}>{login}</button></li>
                 </ul>
             </div>
         </div>

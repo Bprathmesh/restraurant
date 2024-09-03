@@ -25,3 +25,13 @@ Optional chaining
 
 
 Shimmer ui // fake page until we get actual data or skeleton 
+
+Conditional Rendering~ Rendering  based on condn
+
+Why is the need of state variable will local var work? why ? superpower with state variable~~ 
+
+Make a Login button in header which toggles to logout using useState
+Whenever state variable change react triggers a reconcilation cycle rerender 
+Add login and search functionality 
+
+React fiber is new process 
